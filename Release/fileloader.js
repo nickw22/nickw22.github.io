@@ -15,8 +15,8 @@ Module.expectedDataFileDownloads++;
       // worker
       PACKAGE_PATH = encodeURIComponent(location.pathname.toString().substring(0, location.pathname.toString().lastIndexOf('/')) + '/');
     }
-    var PACKAGE_NAME = 'Web.data';
-    var REMOTE_PACKAGE_BASE = 'Web.data';
+    var PACKAGE_NAME = 'nickw22.github.io.data';
+    var REMOTE_PACKAGE_BASE = 'nickw22.github.io.data';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
       Module.printErr('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
@@ -25,7 +25,7 @@ Module.expectedDataFileDownloads++;
                               Module['locateFile'](REMOTE_PACKAGE_BASE) :
                               ((Module['filePackagePrefixURL'] || '') + REMOTE_PACKAGE_BASE);
     var REMOTE_PACKAGE_SIZE = 24734037;
-    var PACKAGE_UUID = '30b4779c-4619-49d7-abe9-978288f44e63';
+    var PACKAGE_UUID = '4434c0c1-f787-4415-a51e-e9945d32ea07';
   
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
       var xhr = new XMLHttpRequest();
@@ -142,10 +142,10 @@ Module['FS_createPath']('/', 'Resources', true, true);
           DataRequest.prototype.requests["/sharedassets0.assets"].onload();
           DataRequest.prototype.requests["/Resources/unity_default_resources"].onload();
           DataRequest.prototype.requests["/Resources/unity_builtin_extra"].onload();
-          Module['removeRunDependency']('datafile_Web.data');
+          Module['removeRunDependency']('datafile_nickw22.github.io.data');
 
     };
-    Module['addRunDependency']('datafile_Web.data');
+    Module['addRunDependency']('datafile_nickw22.github.io.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
